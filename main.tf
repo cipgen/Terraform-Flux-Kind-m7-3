@@ -4,7 +4,7 @@ module "github_repository" {
   github_token             = var.GITHUB_TOKEN
   repository_name          = var.FLUX_GITHUB_REPO
   public_key_openssh       = module.tls_private_key.public_key_openssh
-  public_key_openssh_title = "flux0"
+  public_key_openssh_title = "flux1"
 }
 
 module "tls_private_key" {
@@ -23,4 +23,3 @@ module "flux_bootstrap" {
   private_key       = module.tls_private_key.private_key_pem
   config_path       = module.kind_cluster.kubeconfig
 }
-
