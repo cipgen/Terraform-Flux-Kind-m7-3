@@ -1,4 +1,21 @@
-**Module 7 - Task 3 - Terraform + Flux Interanal cluster Kind**
+## Terraform + Flux and Interanal cluster Kind
+
+Task 
+Using the existing infrastructure code, expand it with official, own, or modules from the example:
+
+github.com/den-vasyliev/tf-fluxcd-flux-bootstrap  
+github.com/den-vasyliev/tf-github-repository  
+github.com/den-vasyliev/tf-hashicorp-tls-keys  
+
+For pre-deployment testing and tests on GKE, use a local development cluster with the help of the kind module, for example:
+````console
+module "kind_cluster" {
+  source = "github.com/den-vasyliev/tf-kind-cluster"
+}
+````
+
+
+------
 
 - Let's add a module responsible for deploying the cluster according to the task.
 
